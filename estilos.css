@@ -1,0 +1,180 @@
+body{
+	margin: 0;
+	background-color:#E5F2FF
+}
+
+header{
+	width: 100%;
+	height: auto;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	background-color:#99ccff;
+}
+
+
+nav{
+	width:70%;
+	height:60px;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+}
+
+nav a:link, nav a:visited{
+	width:20%;
+	height:30px;
+	text-decoration:none;
+	font-family:arial, tahoma, sans-serif;
+	font-weight:bold;
+	color:white;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	transition:all 1s
+}
+
+nav a:hover{
+	color:white;
+}
+
+.logo{
+	width:20%;
+	height:auto;
+}
+
+.logo img{
+	width:40%;
+	height: auto:
+}
+
+main{ 
+	width:100%;
+	height:auto;
+	margin:auto;
+	display:flex;
+	flex-direction:column; 
+	align-items:center;
+}
+
+.ejem{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;	
+	margin-top:2%;
+}
+
+.productos{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+	border-bottom-style:solid;
+	border-width:2px;
+}
+.imga{
+	display:flex;
+	margin-left:5%;
+	box-shadow:2px 2px 5px #000000;
+}
+
+.info2{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction:column;
+	text-align:justify;
+	justify-content:center;
+	align-items:center;
+	margin:5%
+}
+
+
+button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+h1{
+	font-family: Cambria, Italic, Bold Italic;
+}
+
+p{
+	font-family: Arial, Verdana, sans-serif;
+	line-height:1.5;
+}
+
+footer{
+	width: 100%;
+	height: auto;
+	background-color:#99ccff;
+	margin:auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.logof{
+	display:flex;
+	width:25%;
+	height:auto;
+	justify-content: center;
+}
+
+.info{
+	display:flex;
+	width:50%;
+	justify-content: space-around;
+}
+
+.iconos{
+	display:flex;
+	width:25%;
+	justify-content: center;
+	align-items:center;
+}
+
+.tour{
+	display:flex;
+	width:100%;
+	flex-direction: column;
+    align-items: center;
+	margin-bottom:20px;
+}
+
+.tourimg{
+	width:100%;
+	display:flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+.tourimg img{
+width:100%;
+}
+
+.tourtext{
+	width:75%;
+	display:flex;
+	flex-direction: column;
+    align-items: center;
+	text-align:	justify;
+}
