@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Horizontes</title>
+	<meta charset="utf-8">
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1"></head>
+	<link rel="icon" href="favicon.ico">
+<body>
+	<header>
+		<div class="logo">
+			<img src="images/horizontes.png">
+		</div>
+		<nav>
+			<a href="index.html" title="Inicio">INICIO</a>
+			<a href="turismo.html" title="Turismo">TURISMO</a>
+			<a href="servicios.html" title="Planes">PLANES</a>
+			<a href="hoteles.html" title="Hoteles">HOTELES</a>
+			<a href="foro.html" title="Reseñas">RESEÑAS</a>
+			<a href="calendario.html" title="Calendario">CALENDARIO</a>
+			<a href="productos.html" title="Productos">PRODUCTOS</a>
+			<a href="nosotros.html" title="Nosotros">NOSOTROS</a>
+		</nav>
+	</header>
+	<main>
+<div class="calendar">
+    <h1>Calendario de Eventos - Noviembre 2024</h1>
+    <table class="calendar-table">
+        <thead>
+            <tr>
+                <th>Dom</th>
+                <th>Lun</th>
+                <th>Mar</th>
+                <th>Mié</th>
+                <th>Jue</th>
+                <th>Vie</th>
+                <th>Sáb</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="no-event"></td>
+                <td class="event" data-event="Concierto de Rock - 6:00 PM">1</td>
+                <td class="event" data-event="Mercado Artesanal - Todo el día">2</td>
+                <td class="no-event">3</td>
+                <td class="no-event">4</td>
+                <td class="event" data-event="Noche de Cine al Aire Libre - 8:00 PM">5</td>
+                <td class="no-event">6</td>
+            </tr>
+            <tr>
+                <td class="no-event">7</td>
+                <td class="no-event">8</td>
+                <td class="event" data-event="Carrera 5K - 7:00 AM">9</td>
+                <td class="no-event">10</td>
+                <td class="event" data-event="Taller de Fotografía - 10:00 AM">11</td>
+                <td class="no-event">12</td>
+                <td class="event" data-event="Conferencia de Turismo Sostenible - 2:00 PM">13</td>
+            </tr>
+			<tr>
+				<td class="no-event">7</td>
+				<td class="no-event">8</td>
+				<td class="event" data-event="Carrera 5K - 7:00 AM">9</td>
+				<td class="no-event">10</td>
+				<td class="event" data-event="Taller de Fotografía - 10:00 AM">11</td>
+				<td class="no-event">12</td>
+				<td class="event" data-event="Conferencia de Turismo Sostenible - 2:00 PM">13</td>
+			</tr>
+			<tr>
+				<td class="event" data-event="Maratón Cultural - Todo el día">14</td>
+				<td class="no-event">15</td>
+				<td class="no-event">16</td>
+				<td class="event" data-event="Feria Gastronómica - 11:00 AM">17</td>
+				<td class="no-event">18</td>
+				<td class="no-event">19</td>
+				<td class="event" data-event="Exposición de Arte Local - 4:00 PM">20</td>
+			</tr>
+			<tr>
+				<td class="no-event">21</td>
+				<td class="event" data-event="Tour Nocturno por la Ciudad - 7:00 PM">22</td>
+				<td class="no-event">23</td>
+				<td class="no-event">24</td>
+				<td class="event" data-event="Día de Juegos en la Playa - Todo el día">25</td>
+				<td class="event" data-event="Concierto Acústico - 8:00 PM">26</td>
+				<td class="no-event">27</td>
+			</tr>
+			<tr>
+				<td class="event" data-event="Clase de Cocina Internacional - 10:00 AM">28</td>
+				<td class="no-event">29</td>
+				<td class="event" data-event="Festival de Luces - 6:00 PM">30</td>
+				<td class="no-event"></td>
+				<td class="no-event"></td>
+				<td class="no-event"></td>
+				<td class="no-event"></td>
+			</tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Popup de Evento -->
+<div id="eventPopup" class="event-popup">
+    <p id="eventDescription"></p>
+    <button onclick="closePopup()">Cerrar</button>
+</div>
+
+<script>
+    const events = document.querySelectorAll('.event');
+    const popup = document.getElementById('eventPopup');
+    const description = document.getElementById('eventDescription');
+
+    events.forEach(event => {
+        event.addEventListener('click', () => {
+            description.textContent = event.dataset.event;
+            popup.style.display = 'block';
+        });
+    });
+
+    function closePopup() {
+        popup.style.display = 'none';
+    }
+</script>
+
+<ul>
+	<li>1 de noviembre: Concierto de Rock - Disfruta de una noche inolvidable con las mejores bandas locales a partir de las 6:00 PM.</li>
+	<li>2 de noviembre: Mercado Artesanal - Encuentra artesanías únicas y productos locales durante todo el día.</li>
+	<li>5 de noviembre: Noche de Cine al Aire Libre - Vive una experiencia mágica con una selección de películas clásicas bajo las estrellas, desde las 8:00 PM.</li>
+	<li>9 de noviembre: Carrera 5K - Participa en esta emocionante carrera para todas las edades. Comienza a las 7:00 AM.</li>
+	<li>11 de noviembre: Taller de Fotografía - Aprende los fundamentos de la fotografía con expertos. Inicio a las 10:00 AM.</li>
+	<li>13 de noviembre: Conferencia de Turismo Sostenible - Descubre cómo viajar puede ser amigable con el medio ambiente. A las 2:00 PM.</li>
+	<li>14 de noviembre: Maratón Cultural - Sumérgete en la cultura local con música, danza y exposiciones durante todo el día.</li>
+	<li>17 de noviembre: Feria Gastronómica - Deléitate con los sabores de la región. Apertura a las 11:00 AM.</li>
+	<li>20 de noviembre: Exposición de Arte Local - Explora obras de talentosos artistas locales desde las 4:00 PM.</li>
+	<li>22 de noviembre: Tour Nocturno por la Ciudad - Descubre la magia de la ciudad iluminada. Inicia a las 7:00 PM.</li>
+	<li>25 de noviembre: Día de Juegos en la Playa - Actividades divertidas para toda la familia, disponibles durante todo el día.</li>
+	<li>26 de noviembre: Concierto Acústico - Relájate con música en vivo en un ambiente íntimo. Comienza a las 8:00 PM.</li>
+	<li>28 de noviembre: Clase de Cocina Internacional - Aprende a preparar recetas internacionales con chefs profesionales. Inicio a las 10:00 AM.</li>
+	<li>30 de noviembre: Festival de Luces - Cierra el mes con un espectáculo deslumbrante de luces y colores a partir de las 6:00 PM.</li>
+	</main>
+	<footer>
+		<div class="logof">
+			<img src="images/horizontesfoot.png">
+		</div>
+		<div class="info">
+			<p class="p">Av. General Rodríguez 3421 - Ituzaingó - Argentina</p>
+		</div>
+		<div class="info">
+			<p class="p">Tel. +54 9	11 3639-0250</p>
+		</div>
+		<div class="iconos">
+			<img src="images/facebook.png">
+			<img src="images/instagram.png">
+			<p>Horizontes</p>
+		</div>
+	</footer>
+</body>
+</html>	
